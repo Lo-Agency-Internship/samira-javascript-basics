@@ -25,3 +25,21 @@ alert(`First name: ${firstName} Last name: ${lastName} age: ${ageuser} Gender: $
 let message =`First name: ${firstName} , Last name: ${lastName} , age ${ageuser} , Gender: ${gender}`
 alert(message)
 document.getElementById("shown").innerHTML = message
+
+//random
+
+function random(min, max) {
+    
+
+    randomNum = Math.floor(Math.random() * (max - min) + min);
+    return randomNum;
+ }
+ console.log(random(10,70))
+
+ //bionery to decimal
+ let binary = '00110110'
+function bin2dec(binary){
+  return (parseInt(binary, 2));
+}
+
+console.log(bin2dec(binary));
