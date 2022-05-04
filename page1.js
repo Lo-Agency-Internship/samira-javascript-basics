@@ -43,3 +43,29 @@ function bin2dec(binary){
 }
 
 console.log(bin2dec(binary));
+
+////comparision
+function sumnum (x,y) 
+{if(x===y) {return ((x+y)*3);
+} 
+else {return (x+y);} }
+console.log(sumnum(2,4));
+
+////second task
+function absloutdiff (x) {
+  if(x>19) {return ((x-19)*3);}
+}
+console.log(absloutdiff(30));
+/////third one
+
+
+function newString(a){
+  if (a.startsWith('Lo')){
+      return(a)
+     }
+  else{
+      return ("Lo"+a)
+ 
+ }
+ }
+ console.log(newString("Loagancy"));
