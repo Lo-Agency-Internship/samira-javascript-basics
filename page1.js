@@ -34,6 +34,7 @@ function random(min, max) {
     randomNum = Math.floor(Math.random() * (max - min) + min);
     return randomNum;
  }
+
  console.log(random(10,70))
 
  //bionery to decimal
@@ -140,3 +141,41 @@ function logicalGateXnor(l,m){
 let l=false
 let m=false
 console.log(logicalGateXnor(l,m))
+
+/////loop
+
+
+
+
+
+function factorialIterative(k) {
+  let result=1;
+  if(k > 1) {
+    for (let i = 1; i<=k; i++) {
+      result = result*i
+    }
+    return result;
+  }
+else{
+  return "k has to be positive";
+}
+}
+let ask = prompt("Enter a number");
+ask = parseInt(ask)
+alert("The result is:"+ factorialIterative(ask))
+
+////////////////
+
+function factorialRecursive(q){
+  if(q <= 1){
+    return 1;
+  }
+  else{
+    return q * factorialIterative(q-1)
+  }
+}
+
+let inp = prompt("Enter number");
+inp = parseInt(inp)
+alert("The result is:" + factorialIterative(inp))
+
