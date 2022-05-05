@@ -69,3 +69,74 @@ function newString(a){
  }
  }
  console.log(newString("Loagancy"));
+
+ //////logical opreator
+ //1
+ const a= true
+ function logicalGatebuffer (a) {
+   return a
+ }
+ console.log(logicalGatebuffer(a))
+/////2
+ function logicalGateNot (a){
+  return !a
+}
+console.log(logicalGateNot(a))
+/////3
+function logicalGateAnd (b,c) {
+  if (b===true && c===true)
+  return true;
+  else {return false;}
+} 
+let b=true
+let c=true
+
+console.log(logicalGateAnd(b,c))
+/////4
+
+function logicalGateOr(d,e) {
+  if (d===false||e===false) return false;
+  else {return true;}
+}
+let d=false
+let e=false
+console.log(logicalGateOr(d,e))
+/////5
+
+function logicalGateNand (x,g) {
+  if (x===true && g===true)
+  return true;
+  else {return false;}
+} 
+let x=!true
+let g=true
+
+console.log(logicalGateAnd(x,g))
+/////6
+
+function logicalGateNor(h,i) {
+  if (!(h===false||i===false)) 
+  return false;
+  else {return true;}
+}
+let h=false
+let i=false
+console.log(logicalGateNor(h,i))
+/////7
+function logicalGateXor(j,k) {
+  if (j===k) 
+  return false;
+  else {return true;}
+}
+let j=false
+let k=false
+console.log(logicalGateXor(j,k))
+/////8
+function logicalGateXnor(l,m){
+  if(!(l===m)) 
+  return false;
+  else {return true;}
+}
+let l=false
+let m=false
+console.log(logicalGateXnor(l,m))
