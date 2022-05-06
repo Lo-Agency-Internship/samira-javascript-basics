@@ -179,3 +179,58 @@ let inp = prompt("Enter number");
 inp = parseInt(inp)
 alert("The result is:" + factorialIterative(inp))
 
+
+/////////////////////////////functions///////A
+const myarry =[]
+myarry.push(Math.floor(Math.random()*(50-15)+15));
+myarry.push(Math.floor(Math.random()*(50-15)+15));
+myarry.push(Math.floor(Math.random()*(50-15)+15));
+console.log(myarry);
+
+
+///////////////////////////////B
+function customMap(ar=[] , callback){
+   const _get=[]
+    for (let i=0; i<ar.length; i++) {
+        _get.push(callback(ar[i]))
+
+    }
+    return _get;
+}
+const _in = customMap(myarry, (_value) => {
+  return  _value *2;
+}
+)
+console.log(_in);
+/////////////////////C
+
+function customFilter(ar=[], callback){
+    const _get=[]
+    for(let i=0; i<ar.length; i++) {
+        if(callback(ar[i])) {
+            _get.push(ar[i])
+        }
+    }
+return _get;
+}
+const fl=customFilter(myarry, (_value) =>{
+    return _value >23;
+}
+)
+console.log(fl);
+
+//////////////////////D
+function customReduce(arr, callback)
+{
+    let initial = arr[0];
+
+    for (let i = 1; i < arr.length; i++)
+    {
+        initial = callback(initial, arr[i], i);
+    }
+    return initial;
+}
+
+console.log(customReduce(myarry, (acc, cv) => acc + cv));
+
+
